@@ -6,7 +6,8 @@ public abstract class AbstractIBag<E> {
       protected List<E> elements;
 
       // Effects:  produce an AbstractIBag equal to this bagUnion {obj}
-      public AbstractIBag<E> put(Object obj) {
+      @SuppressWarnings("unchecked")
+	public AbstractIBag<E> put(Object obj) {
          AbstractIBag<E> newBag = getNewBag();
          newBag.elements = new ArrayList<E>(this.elements);
          newBag.elements.add((E) obj);

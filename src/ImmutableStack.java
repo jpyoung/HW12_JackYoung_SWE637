@@ -2,11 +2,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * @author Jack Young
  * @date October 06, 2013
- * SWE 619 Assignment 6
  */
 
 public class ImmutableStack<E> extends AbstractIBag<E> {
